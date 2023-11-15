@@ -8,10 +8,6 @@ public class ElectronicItem extends CISItem {
         return storageCapacity;
     }
 
-    public String getOperatingSystem() {
-        return operatingSystem;
-    }
-
     public String getModel() {
         return model;
     }
@@ -20,12 +16,12 @@ public class ElectronicItem extends CISItem {
         return maker;
     }
 
-    public void setStorageCapacity(int storageCapacity) {
-        this.storageCapacity = storageCapacity;
+    public String getOperatingSystem() {
+        return operatingSystem;
     }
 
-    public void setOperatingSystem(String operatingSystem) {
-        this.operatingSystem = operatingSystem;
+    public void setStorageCapacity(int storageCapacity) {
+        this.storageCapacity = storageCapacity;
     }
 
     public void setModel(String model) {
@@ -34,5 +30,9 @@ public class ElectronicItem extends CISItem {
 
     public void setMaker(String maker) {
         this.maker = maker;
+    }
+
+    public void setOperatingSystem(String operatingSystem) {
+        this.operatingSystem = operatingSystem;
     }
 }
